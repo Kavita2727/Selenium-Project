@@ -2,24 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="sample test suite" duration-ms="50739" started-at="2021-10-13T15:28:04 IST" finished-at="2021-10-13T15:28:54 IST">
+  <suite name="sample test suite" duration-ms="63191" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="50739" started-at="2021-10-13T15:28:04 IST" finished-at="2021-10-13T15:28:54 IST">
-      <class name="com.selenium.examples.WaitTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.examples.WaitTest@7d70d1b1]" name="setUp" is-config="true" duration-ms="13527" started-at="2021-10-13T15:28:04 IST" finished-at="2021-10-13T15:28:17 IST">
+    <test name="Login Test" duration-ms="63191" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
+      <class name="com.selenium.examples.IndividualLogin">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@80503]" name="logintest" duration-ms="63118" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:com.selenium.examples.WaitTest@7d70d1b1]" name="testUntitled" duration-ms="34756" started-at="2021-10-13T15:28:17 IST" finished-at="2021-10-13T15:28:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.examples.WaitTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="2361" started-at="2021-10-13T15:28:52 IST" finished-at="2021-10-13T15:28:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.selenium.examples.WaitTest -->
+        </test-method> <!-- logintest -->
+      </class> <!-- com.selenium.examples.IndividualLogin -->
     </test> <!-- Login Test -->
   </suite> <!-- sample test suite -->
 </testng-results>
