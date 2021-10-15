@@ -2,7 +2,7 @@
 <suite name="sample test suite" >
   <test name="Login Test">
     <classes>
-      <class name="com.selenium.examples.WaitTest"/>
+      <class name="com.selenium.examples.IndividualLogin"/>
     </classes>
   </test>
 </suite>
