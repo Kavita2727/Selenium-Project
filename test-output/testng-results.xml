@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="sample test suite" duration-ms="63191" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
+  <suite name="SampleSuite2" duration-ms="8571" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="63191" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
-      <class name="com.selenium.examples.IndividualLogin">
-        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@80503]" name="logintest" duration-ms="63118" started-at="2021-10-15T20:45:43 IST" finished-at="2021-10-15T20:46:46 IST">
+    <test name="SampleTest" duration-ms="8571" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
+      <class name="com.testng.examples.SearchDelete">
+        <test-method status="PASS" signature="user_search_Google_webapp()[pri:0, instance:com.testng.examples.SearchDelete@69a3d1d]" name="user_search_Google_webapp" duration-ms="8519" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-      </class> <!-- com.selenium.examples.IndividualLogin -->
-    </test> <!-- Login Test -->
-  </suite> <!-- sample test suite -->
+        </test-method> <!-- user_search_Google_webapp -->
+      </class> <!-- com.testng.examples.SearchDelete -->
+    </test> <!-- SampleTest -->
+  </suite> <!-- SampleSuite2 -->
 </testng-results>
