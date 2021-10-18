@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SampleSuite2" duration-ms="8571" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
+  <suite name="sample test suite" duration-ms="29454" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:23 IST">
     <groups>
     </groups>
-    <test name="SampleTest" duration-ms="8571" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
-      <class name="com.testng.examples.SearchDelete">
-        <test-method status="PASS" signature="user_search_Google_webapp()[pri:0, instance:com.testng.examples.SearchDelete@69a3d1d]" name="user_search_Google_webapp" duration-ms="8519" started-at="2021-10-16T11:59:38 IST" finished-at="2021-10-16T11:59:47 IST">
+    <test name="Login Test" duration-ms="29454" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:23 IST">
+      <class name="com.selenium.examples.IndividualLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="setup" is-config="true" duration-ms="7651" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_search_Google_webapp -->
-      </class> <!-- com.testng.examples.SearchDelete -->
-    </test> <!-- SampleTest -->
-  </suite> <!-- SampleSuite2 -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="logintest" duration-ms="19670" started-at="2021-10-18T12:38:01 IST" finished-at="2021-10-18T12:38:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="teardown" is-config="true" duration-ms="2070" started-at="2021-10-18T12:38:21 IST" finished-at="2021-10-18T12:38:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.selenium.examples.IndividualLogin -->
+    </test> <!-- Login Test -->
+  </suite> <!-- sample test suite -->
 </testng-results>
