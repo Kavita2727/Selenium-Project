@@ -1,16 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<!-- <suite name="sample test suite" >
-  <test name="Login Test">
-    <classes>
-      <class name="com.selenium.examples.IndividualLogin"/>
-    </classes>
-  </test>
-</suite> -->
 
-
-=======
->>>>>>> 595a7c9f1b7fda32dc5e6ba122702b316c05f0f1
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 	<parameter name="browser" value="Chrome"/>
@@ -24,8 +13,5 @@
 	<class name="com.selenium.examples.IndividualLogin" />
 	</classes>
 	</test>
-<<<<<<< HEAD
-</suite>
-=======
-</suite>
->>>>>>> 595a7c9f1b7fda32dc5e6ba122702b316c05f0f1
+	</suit>
+
