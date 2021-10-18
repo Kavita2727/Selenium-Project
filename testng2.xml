@@ -16,17 +16,4 @@
 </suite> -->
 
 
-	<suite name="Suite">
-	<test thread-count="5" name="Test">
-	<parameter name="browser" value="Chrome"/>
-	<classes>
-	<class name="com.selenium.examples.IndividualLogin" />
-	</classes>
-	</test> <!-- Test -->
-	<test name="Sample">
-	<parameter name="browser" value="firefox"/>
-	<classes>
-	<class name="com.selenium.examples.IndividualLogin" />
-	</classes>
-	</test>
-	</suite>
+	
