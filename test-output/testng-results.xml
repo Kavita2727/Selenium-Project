@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="sample test suite" duration-ms="29454" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:23 IST">
+  <suite name="Suite" duration-ms="64545" started-at="2021-10-18T13:09:49 IST" finished-at="2021-10-18T13:10:53 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="29454" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:23 IST">
+    <test name="Test" duration-ms="27985" started-at="2021-10-18T13:09:49 IST" finished-at="2021-10-18T13:10:17 IST">
       <class name="com.selenium.examples.IndividualLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="setup" is-config="true" duration-ms="7651" started-at="2021-10-18T12:37:53 IST" finished-at="2021-10-18T12:38:01 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.selenium.examples.IndividualLogin@6950e31]" name="setup" is-config="true" duration-ms="4412" started-at="2021-10-18T13:09:49 IST" finished-at="2021-10-18T13:09:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="logintest" duration-ms="19670" started-at="2021-10-18T12:38:01 IST" finished-at="2021-10-18T12:38:21 IST">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@6950e31]" name="logintest" duration-ms="22758" started-at="2021-10-18T13:09:53 IST" finished-at="2021-10-18T13:10:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.examples.IndividualLogin@7113b13f]" name="teardown" is-config="true" duration-ms="2070" started-at="2021-10-18T12:38:21 IST" finished-at="2021-10-18T12:38:23 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.examples.IndividualLogin@6950e31]" name="teardown" is-config="true" duration-ms="768" started-at="2021-10-18T13:10:16 IST" finished-at="2021-10-18T13:10:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.selenium.examples.IndividualLogin -->
-    </test> <!-- Login Test -->
-  </suite> <!-- sample test suite -->
+    </test> <!-- Test -->
+    <test name="Sample" duration-ms="36527" started-at="2021-10-18T13:10:17 IST" finished-at="2021-10-18T13:10:53 IST">
+      <class name="com.selenium.examples.IndividualLogin">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.selenium.examples.IndividualLogin@6eceb130]" name="setup" is-config="true" duration-ms="9165" started-at="2021-10-18T13:10:17 IST" finished-at="2021-10-18T13:10:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="logintest()[pri:0, instance:com.selenium.examples.IndividualLogin@6eceb130]" name="logintest" duration-ms="25348" started-at="2021-10-18T13:10:26 IST" finished-at="2021-10-18T13:10:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.examples.IndividualLogin@6eceb130]" name="teardown" is-config="true" duration-ms="2011" started-at="2021-10-18T13:10:51 IST" finished-at="2021-10-18T13:10:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.selenium.examples.IndividualLogin -->
+    </test> <!-- Sample -->
+  </suite> <!-- Suite -->
 </testng-results>

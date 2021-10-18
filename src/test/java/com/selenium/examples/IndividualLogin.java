@@ -1,27 +1,66 @@
 package com.selenium.examples;
 
 import java.awt.AWTException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class IndividualLogin {
 	WebDriver driver;
-	
+	private static final Logger logger = LogManager.getLogger(IndividualLogin.class);
+
+	@Parameters("browser")
 	@BeforeTest
-	public void setup() throws InterruptedException {
-		WebDriverManager.firefoxdriver().setup();
-	    driver = new FirefoxDriver();
-		
+	public void setup(String browser) throws Exception {
+	// Check if parameter passed from TestNG is 'firefox'
+	if (browser.equalsIgnoreCase("firefox")) {
+	// create firefox instance
+	WebDriverManager.firefoxdriver().setup();
+	driver = new FirefoxDriver();
 	}
-		
+
+
+
+	// Check if parameter passed as 'chrome'
+	else if (browser.equalsIgnoreCase("Chrome")) {
+	// set path to chromedriver.exe
+	WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
+
+
+
+	}
+
+
+
+	else {
+	// If no browser passed throw exception
+	throw new Exception("Browser is not correct");
+	}
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+
+
+	/*
+	 * public void setup() throws InterruptedException {
+	 * WebDriverManager.firefoxdriver().setup(); driver = new FirefoxDriver();
+	 * WebDriverManager.chromedriver().setup(); driver = new ChromeDriver();
+	 * 
+	 * }
+	 */
 		@Test
  		public void logintest() throws InterruptedException, AWTException {
 		//System.setProperty("webdriver.gecko.driver", "C:\\\\Users\\\\kavitad\\\\eclipse-selenium\\\\SeleniumProject\\\\drivers\\\\geckodriver.exe");
@@ -69,18 +108,18 @@ public class IndividualLogin {
 		Thread.sleep(1000);
 		JavascriptExecutor jse= (JavascriptExecutor)driver;
 		jse.executeScript("scrollBy(0,400)");
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement Continue = driver.findElement(By.name("continue"));
 		Continue.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement finish = driver.findElement(By.id("finish"));
 		finish.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		JavascriptExecutor jse1= (JavascriptExecutor)driver;
 		jse1.executeScript("scrollBy(0,-400)");
 		WebElement backhome = driver.findElement(By.tagName("button"));
 		backhome.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		WebElement logout = driver.findElement(By.id("logout_sidebar_link"));
 		logout.click();
 		Thread.sleep(1000);
